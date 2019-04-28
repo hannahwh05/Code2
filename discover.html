@@ -10,11 +10,19 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="map_style.css">
 
+<!--This is a link to the Leaflet stylesheet-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<!--This is a link to the Leaflet JS library-->
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script type="text/javascript" src="map_setup.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 <link rel="shortcut icon" href="logo.png" />
 <title>Walks on the Wild Side</title>
 
 </head>
-<body>
+
+<body onload="fetchData()";>
 
 <div class="bg-img">
   <div class="container">
@@ -24,10 +32,10 @@
   </div>
   <div class="container">
 	<div class="topnav">
-      	<a href="#"> HOME</a> 
-		<a class="active" href="#"> DISCOVER</a> 
-		<a href="#"> CONTACT</a> 
-		<a href="#"> ABOUT</a>
+      	<a href="homepage.html"> HOME</a> 
+		<a class="active" href="discover.html"> DISCOVER</a> 
+		<a href="contact.html"> CONTACT</a> 
+		<a href="about.html"> ABOUT</a>
     </div>
   </div>
 
@@ -48,11 +56,24 @@
  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
 </div>
 
+<div class="clearfix">
+		<div class="flex-container">
+		  <div class="box1">
+		</div>
+
+		<div class="box2">
+		  <p>Explore the map below for various places you can go in and around Leeds for a walk amongst name.
+		  </br>
+		  
   <div class="container">
 	<!-- Social media icons -->
 	<a href="https://www.facebook.com/WalksOWS/" target="_blank" class="fa fa-facebook"></a>
 	<a href="https://twitter.com/walksows" target="_blank" class="fa fa-twitter"></a>
 	<a href="https://www.instagram.com/walksows/" target="_blank" class="fa fa-instagram"></a>
   </div>
+
+ 
+<div id="map" class="gmap"></div>
+
 </body>
 </html> 
