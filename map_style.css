@@ -1,3 +1,56 @@
+/* Elements included at top of page */
+header {
+ 
+}
+
+header-left {
+  float: left;
+}
+
+header-right {
+	float: right;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hero {
+
+}
+/* Navigation bar at top of page */
+.topnav {
+  overflow: hidden;
+  position: sticky;
+  font-family: 'Montserrat', sans-serif;  
+  margin-bottom: 10px;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(34, 139, 34);
+  text-align: center;
+  font-size: 12px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(144, 238, 144);
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  color: white;
+  background-color: #4CAF50;
+  
+}
+
 /* Social media buttons */
 .fa {
   padding: 20px;
@@ -7,7 +60,7 @@
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  position: fixed;
+  position: relative;
 }
 
 .fa:hover {
@@ -33,10 +86,14 @@
   margin: 20px;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
-  width: 70px; 
-  height: 70px; 
+  width: 120px; 
+  height: 120px; 
   display: inline;
   float: left;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Container for flexboxes */
@@ -54,6 +111,7 @@
 }
 
 .hero-text {
+  font-family: 'Montserrat', sans-serif;  
   text-align: center;
   position: absolute;
   top: 50%;
@@ -93,42 +151,8 @@
   position: relative;
 }
 
-/* Position the navbar container inside the image */
-.container {
-  position: relative;
-  margin: 15px;
-  width: 400px;
-}
 
-/* The navbar */
-.topnav {
-  overflow: hidden;
-  position: sticky;
-}
-
-/* Navbar links */
-.topnav a {
-  float: left;
-  display: block;
-  color: rgb(34, 139, 34);
-  text-align: center;
-  font-size: 12px;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: rgb(144, 238, 144);
-}
-
-/* Add an active class to highlight the current page */
-.active {
-  color: white;
-  background-color: #4CAF50;
-  
-}
 
 body {
-
+  font-family: 'Montserrat', sans-serif;  
 }
