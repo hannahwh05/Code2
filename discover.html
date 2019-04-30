@@ -24,28 +24,38 @@
 <script type="text/javascript" src="map_setup.js"></script>
 <!-- Leaflet JS library -->
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<!-- Map script -->
+<script language="JavaScript" type="text/JavaScript" src="script.js"></script>
+
 
 <!-- Tab title and icon -->
 <link rel="shortcut icon" href="logo.png" />
 <title>Walks on the Wild Side</title>
 
-
-
-
-
-
-
-<!--This is a link to the Leaflet JS library-->
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<!--This is a link to the stylesheet I have created-->
-<script language="JavaScript" type="text/JavaScript" src="script.js"></script>
-<script language="JavaScript" type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
 </head>
 
 <!--Call the function to load initialise the map object -->
-
 <body onload = "fetchData()";>
+
+<header>
+<header-left>
+<!-- Navigation pane -->
+<div class="topnav" id="myTopnav">
+	<a class="active" href="homepage.html" >HOME</a>
+	<a href="discover.html">DISCOVER</a>
+	<a href="contribute.html">CONTRIBUTE</a>
+	<a href="about.html">ABOUT</a>
+</div>
+</header-left>
+<header-right>
+<div>
+	<!-- Social media links -->
+	<a href="https://www.facebook.com/WalksOWS/" target="_blank" class="fa fa-facebook"> </a>
+	<a href="https://twitter.com/walksows" target="_blank" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/walksows/" target="_blank" class="fa fa-instagram"></a>
+</div>
+</header-right>
+</header>
 
 <!--The map will appear in this div-->
 <div id="map" class="gmap"</div>
