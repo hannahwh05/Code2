@@ -1,98 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Webpage designed for GEOG5870-Web-based GIS to help find and choose wildlife walks">
+	<meta name="keywords" content="Wild, Wildlife, Rewilding, Walks, Nature, Reserves, Green">
+	<meta name="author" content="Hannah Olivia Alice Eleanor Wheldon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Stylesheets -->
+	<!-- Homepage stylesheet -->
+	<link rel="stylesheet" href="home_style.css">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- Social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Leaflet stylesheet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 
-<meta charset="UTF-8">
-<meta name="description" content="Webpage designed for GEOG5870-Web-based GIS to help find and choose wildlife walks">
-<meta name="keywords" content="Wild, Wildlife, Rewilding, Walks, Nature, Reserves, Green">
-<meta name="author" content="Hannah Olivia Alice Eleanor Wheldon">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Stylesheets -->
-
-<!-- Homepage stylesheet -->
-<link rel="stylesheet" href="home_style.css">
-<!-- Google font -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<!-- Social media icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Leaflet stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-
-<!-- JavaScripts -->
-
-<!-- Map script -->
-<script type="text/javascript" src="map_setup.js"></script>
-<!-- Leaflet JS library -->
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-
-<!-- Tab title and icon -->
-<link rel="shortcut icon" href="logo.png" />
-<title>Walks on the Wild Side</title>
+	<!-- Tab title and icon -->
+	<link rel="shortcut icon" href="logo.png" />
+	<title>Walks on the Wild Side</title>
 
 </head>
 <body>
+	<header>
+		<header-left>
+			<!-- Navigation pane -->
+			<div class="topnav" id="myTopnav">
+			  <a class="active" href="homepage.html" >HOME</a>
+				<a href="discover.html">DISCOVER</a>
+				<a href="contribute.html">CONTRIBUTE</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+		</header-left>
+		<header-right>
+			<div>
+				<!-- Social media links -->
+				<a href="https://www.facebook.com/WalksOWS/" target="_blank" class="fa fa-facebook"> </a>
+				<a href="https://twitter.com/walksows" target="_blank" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/walksows/" target="_blank" class="fa fa-instagram"></a>
+			</div>
+		</header-right>
+	</header>
 
-<header>
-<header-left>
-<!-- Navigation pane -->
-<div class="topnav" id="myTopnav">
-	<a class="active" href="homepage.html" >HOME</a>
-	<a href="discover.html">DISCOVER</a>
-	<a href="contribute.html">CONTRIBUTE</a>
-	<a href="about.html">ABOUT</a>
-</div>
-</header-left>
-<header-right>
-<div>
-	<!-- Social media links -->
-	<a href="https://www.facebook.com/WalksOWS/" target="_blank" class="fa fa-facebook"> </a>
-	<a href="https://twitter.com/walksows" target="_blank" class="fa fa-twitter"></a>
-	<a href="https://www.instagram.com/walksows/" target="_blank" class="fa fa-instagram"></a>
-</div>
-</header-right>
-</header>
+	<!-- Image and logo at top of page -->
+	<hero>
+		<div class="bg-img">
+			<img class="logo" src="logo.png" href="homepage.html" target="_blank" alt="Walks on the Wild Side Logo: Bee">
+		</div>
+		<div class="hero-image">
+			<div class="hero-text">
+			WALKS ON THE WILD
+			<hr color="white">
+			<hero1>Side</hero1>
+			<br>
+			<button href="discover.html">DISCOVER</button>
+			</div>
+		</div>
+	</hero>
 
-<!-- Image and logo -->
-<hero>
-<div class="bg-img">
-	<img class="logo" src="logo.png" href="homepage.html" target="_blank" alt="Walks on the Wild Side Logo: Bee">
-</div>
+	<!-- Main section -->
+	<main>
+		<div>
+			<p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+			<br>
+			 bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+			</br>
+			</div>
+			<p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+			<br>
+			 bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+			</div>
+			<p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+			<br>
+			 bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
 
-<div class="hero-image">
-  <div class="hero-text">
-    WALKS ON THE WILD
-	<hr color="white">
-    <hero1>Side</hero1>
-	<br>
-    <button href="discover.html">DISCOVER</button>
-  </div>
-</div>
-</hero>
-
-<!-- Main section -->
-<main>
-<div>
-<p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-<br>
- bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-</br>
-</div>
-<p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-<br>
- bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-</div>
-<p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-<br>
- bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-
-</div>
-<p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-<br>
- bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-</div>
-</main>
+			</div>
+			<p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+			<br>
+			 bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+		</div>
+	</main>
 
 </body>
 </html> 

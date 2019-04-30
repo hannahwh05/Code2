@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="Webpage designed for GEOG5870-Web-based GIS to help find and choose wildlife walks">
-<meta name="keywords" content="Wild, Wildlife, Rewilding, Walks, Nature, Reserves, Green">
-<meta name="author" content="Hannah Olivia Alice Eleanor Wheldon">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="Webpage designed for GEOG5870-Web-based GIS to help find and choose wildlife walks">
+	<meta name="keywords" content="Wild, Wildlife, Rewilding, Walks, Nature, Reserves, Green">
+	<meta name="author" content="Hannah Olivia Alice Eleanor Wheldon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Stylesheets -->
+	<!-- Stylesheets -->
+	<!-- Discover map stylesheet -->
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css"/>
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- Social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Leaflet stylesheet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 
-<!-- Discover map stylesheet -->
-<link rel="stylesheet" media="all" href="map_style.css" type="text/css"/>
-<!-- Google font -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<!-- Social media icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Leaflet stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<!-- JavaScripts 
+	<!-- Map script -->
+	<script type="text/javascript" src="map_setup.js"></script>
+	<!-- Leaflet JS library -->
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<!-- Map script -->
+	<script language="JavaScript" type="text/JavaScript" src="script.js"></script>
 
-<!-- JavaScripts -->
-
-<!-- Map script -->
-<script type="text/javascript" src="map_setup.js"></script>
-<!-- Leaflet JS library -->
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<!-- Map script -->
-<script language="JavaScript" type="text/JavaScript" src="script.js"></script>
-
-
-<!-- Tab title and icon -->
-<link rel="shortcut icon" href="logo.png" />
-<title>Walks on the Wild Side</title>
+	<!-- Tab title and icon -->
+	<link rel="shortcut icon" href="logo.png" />
+	<title>Walks on the Wild Side</title>
 
 </head>
 
 <!--Call the function to load initialise the map object -->
 <body onload = "fetchData()";>
+	<header>
+		<header-left>
+			<!-- Navigation pane -->
+			<div class="topnav" id="myTopnav">
+				<a class="active" href="homepage.html" >HOME</a>
+				<a href="discover.html">DISCOVER</a>
+				<a href="contribute.html">CONTRIBUTE</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+		</header-left>
+		<header-right>
+			<div>
+				<!-- Social media links -->
+				<a href="https://www.facebook.com/WalksOWS/" target="_blank" class="fa fa-facebook"> </a>
+				<a href="https://twitter.com/walksows" target="_blank" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/walksows/" target="_blank" class="fa fa-instagram"></a>
+			</div>
+		</header-right>
+	</header>
 
-<header>
-<header-left>
-<!-- Navigation pane -->
-<div class="topnav" id="myTopnav">
-	<a class="active" href="homepage.html" >HOME</a>
-	<a href="discover.html">DISCOVER</a>
-	<a href="contribute.html">CONTRIBUTE</a>
-	<a href="about.html">ABOUT</a>
-</div>
-</header-left>
-<header-right>
-<div>
-	<!-- Social media links -->
-	<a href="https://www.facebook.com/WalksOWS/" target="_blank" class="fa fa-facebook"> </a>
-	<a href="https://twitter.com/walksows" target="_blank" class="fa fa-twitter"></a>
-	<a href="https://www.instagram.com/walksows/" target="_blank" class="fa fa-instagram"></a>
-</div>
-</header-right>
-</header>
-
-<!--The map will appear in this div-->
-<div id="map" class="gmap"</div>
+	<!--The map will appear in this div-->
+	<div id="map" class="gmap"</div>
 
 </body>
+</html>
