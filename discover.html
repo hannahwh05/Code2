@@ -5,8 +5,8 @@
 	<meta name="description" content="Webpage designed for GEOG5870-Web-based GIS to help find and choose wildlife walks">
 	<meta name="keywords" content="Wild, Wildlife, Rewilding, Walks, Nature, Reserves, Green">
 	<meta name="author" content="Hannah Olivia Alice Eleanor Wheldon">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1" "initial-scale=1,maximum-scale=1,user-scalable=no">
+		
 	<!-- Stylesheets -->
 	<!-- Discover map stylesheet -->
 	<link rel="stylesheet" media="all" href="map_style.css" type="text/css"/>
@@ -16,7 +16,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Leaflet stylesheet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-
+  
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+	
 	<!-- JavaScripts 
 	<!-- Map script -->
 	<script type="text/javascript" src="map_setup.js"></script>
@@ -25,6 +27,11 @@
 	<!-- Map script -->
 	<script language="JavaScript" type="text/JavaScript" src="script.js"></script>
 
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+	
+	<!-- Leaflet-Ajax script -->
+	<script src="/js/leaflet-0.7.2/leaflet.ajax.min.js"></script>
+  
 	<!-- Tab title and icon -->
 	<link rel="shortcut icon" href="logo.png" />
 	<title>Walks on the Wild Side</title>
@@ -37,8 +44,8 @@
 		<header-left>
 			<!-- Navigation pane -->
 			<div class="topnav" id="myTopnav">
-				<a class="active" href="homepage.html" >HOME</a>
-				<a href="discover.html">DISCOVER</a>
+				<a href="homepage.html" >HOME</a>
+				<a class="active" href="discover.html">DISCOVER</a>
 				<a href="contribute.html">CONTRIBUTE</a>
 				<a href="about.html">ABOUT</a>
 			</div>
@@ -52,9 +59,9 @@
 			</div>
 		</header-right>
 	</header>
-
-	<!--The map will appear in this div-->
-	<div id="map" class="gmap"</div>
-
+	<main>
+		<!--The map will appear in this div-->
+		<div id="map" class="gmap"</div>
+	</main>
 </body>
 </html>
