@@ -1,7 +1,8 @@
 .gmap{
 	height: 800px; 
 	width: 100%; 
-	border: 3px solid rgb(34, 139, 34); 
+	border-top: 3px solid rgb(34, 139, 34); 
+	border-bottom: 3px solid rgb(34, 139, 34); 
 }
 
 /* Elements included at top of page */
@@ -26,7 +27,6 @@ header:after {
 main {
 	font-family: 'Open Sans', sans-serif;  
 	font-size: 14px;
-	margin: 40px;
 }
 
 /* Navigation bar at top of page */

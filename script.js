@@ -4,12 +4,12 @@ function fetchData()	{
 
 		
 		//Create the map object and set the centre point and zoom level 
-		map = L.map('map').setView([53.801052, -1.548267], 12);
+		map = L.map('map').setView([0.00,0.00], 2);
 		
 		//Load tiles from open street map (you maybe have mapbox tiles here- this is fine) 
 		L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			attribution:'Map data ©OpenStreetMap contributors, CC-BY-SA, Imagery ©CloudMade',
-			
+			attribution:'Map data Â©OpenStreetMap contributors, CC-BY-SA, Imagery Â©CloudMade',
+			maxZoom: 18
 		//add the basetiles to the map object	
 		}).addTo(map);
 		

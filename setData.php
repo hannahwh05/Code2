@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
-	<title>Hurricane Tweets</title>
+	<title>Earthquake</title>
 	
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="map_style.css">
 	
 </head>
 
