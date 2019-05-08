@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Earthquake</title>
+	<title>tweets</title>
 	
 	<link rel="stylesheet" type="text/css" href="map_style.css">
 	
