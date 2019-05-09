@@ -4,11 +4,13 @@ function fetchData()	{
 
 		
 		//Create the map object and set the centre point and zoom level 
-		map = L.map('map').setView([53.803527, -1.584981], 11);
+		map = L.map('map').setView([53.757973, -1.552252], 11);
 		
 		//Load tiles from open street map (you maybe have mapbox tiles here- this is fine) 
-		L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			attribution:'Map data ©OpenStreetMap contributors, CC-BY-SA, Imagery ©CloudMade',
+		L.tileLayer('https://api.mapbox.com/styles/v1/gy18hoae/cjvgl9i0j08ag1gqd073kg411/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZ3kxOGhvYWUiLCJhIjoiY2pzeWhuY3Q4MGJ5bjQ3cm5naWdmdmhzcyJ9.zFVmqo1q2wv0I1dHIBz0Xw', {
+			
+			attribution:'© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+
 		//add the basetiles to the map object	
 		}).addTo(map);
 		
@@ -35,7 +37,7 @@ function fetchData()	{
 	
 }
 	var myIcon = L.icon({
-		iconUrl: 'logo.png',
+		iconUrl: 'marker.png',
 		iconSize: [28, 44]
 	});
 	
