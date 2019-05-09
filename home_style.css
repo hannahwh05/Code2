@@ -93,8 +93,6 @@ main {
 	margin: 40px;
 }
 
-
-
 .logo {
 	margin: 20px;
 	border: 2px solid rgb(255, 255, 255);
@@ -110,7 +108,6 @@ main {
 }
 
 .hero-image {
-	background-image: url("durdle_door.png");
 	height: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -149,7 +146,7 @@ main {
 
 /*Hero image*/
 .bg-img {
-	background-image: url("durdle_door.png");
+	background-image: url("images/hero_img.jpg");
 	height: 700px;
 	/* Center and scale the image */
 	background-position: center;
@@ -161,7 +158,6 @@ hero1 {
 	font-family: 'Open Sans', sans-serif;  
 	font-size: 45px;
 }
-
 
 /* Bordered form */
 form {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Webpage designed for GEOG5870-Web-based GIS to help find and choose wildlife walks">
+	<meta name="keywords" content="Wild, Wildlife, Rewilding, Walks, Nature, Reserves, Green">
+	<meta name="author" content="Hannah Olivia Alice Eleanor Wheldon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Stylesheets -->
+	<!-- Homepage stylesheet -->
+	<link rel="stylesheet" media="all" href="home_style.css">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- Social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Leaflet stylesheet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+	<script language="JavaScript" type="text/JavaScript" src="login_script.js"></script>
+	
+	<!-- Tab title and icon -->
+	<link rel="shortcut icon" href="logo.png" />
+	<title>Walks on the Wild Side</title>
+
+</head>
+<body>
+	<header>
+		<header-left>
+			<!-- Navigation pane -->
+			<div class="topnav" id="myTopnav">
+			  <a href="homepage.html" >HOME</a>
+				<a href="discover.html">DISCOVER</a>
+				<a class="active" href="contribute.html">CONTRIBUTE</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+		</header-left>
+		<header-right>
+			<div>
+				<!-- Social media links -->
+				<a href="https://www.facebook.com/WalksOWS/" target="_blank" class="fa fa-facebook"> </a>
+				<a href="https://twitter.com/walksows" target="_blank" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/walksows/" target="_blank" class="fa fa-instagram"></a>
+			</div>
+		</header-right>
+	</header>
+
+	<p>This page runs off the generosity of wildlife lovers! If you know somewhere you think should be included, please fill out the form below.</p>
+	<div class = "wrapper">
+		<form id = 'insertData' method = 'POST' action = 'setData.php' enctype="multipart/form-data">
+			<p>Name : <input type = 'text' class = 'boxes' name = 'id'></p>
+			<p>Latitude (e.g. 53.871574) : <input type = 'text' class = 'boxes' name = 'lat'></p>
+			<p>Longitude (e.g. -1.593903) : <input type = 'text' class = 'boxes' name = 'long'></p>
+			<p>Designation e.g. SSSI, SAC, SPA, LNR, YWT, RSPB or National Trust reserve : <input type = 'text' class = 'boxes' name = 'designation'></p>
+			<p>Owner : <input type = 'text' class = 'boxes' name = 'owner'></p>
+			<p>Website : <input type = 'text' class = 'boxes' name = 'website'></p>
+			<br>
+			<p>Answer Y or N to the following:</p>
+			<br>
+			<p>Parking?: <input type = 'text' class = 'boxes' name = 'parking'></p>
+			<p>Are dogs allowed?: <input type = 'text' class = 'boxes' name = 'dogs'></p>
+			<p>Is there a play area? : <input type = 'text' class = 'boxes' name = 'play_area'></p>
+			<p>Is there wheelchair access? : <input type = 'text' class = 'boxes' name = 'disabled'></p>
+			<p>Toilets? : <input type = 'text' class = 'boxes' name = 'toilets'></p>
+			<p>Cafe? : <input type = 'text' class = 'boxes' name = 'cafe'></p>
+			<p>Visitor centre ? : <input type = 'text' class = 'boxes' name = 'visitor_centre'></p>
+			<p>Lakes, ponds or rivers? : <input type = 'text' class = 'boxes' name = 'water'></p>
+			<p>Woodland? : <input type = 'text' class = 'boxes' name = 'woodland'></p>
+			
+			<br>
+			
+			<p>Comments : <input type = 'text' class = 'boxes' name = 'comments'></p>
+			
+			<input type='submit' id ='submit' name = 'Submit' value= 'Submit Form'>
+		</form>
+	</div>
+
+</body>
+</html> 
