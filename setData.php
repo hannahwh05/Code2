@@ -28,7 +28,7 @@
 		$comments = sanitize('lon',FILTER_SANITIZE_SPECIAL_CHARS,$pattern);
 		
 		//Connect to db 
-		$pgsqlOptions = "host='localhost' dbname='geog5871' user='geog5871student' password='Geibeu9b';
+		$pgsqlOptions = "host='localhost' dbname='geog5871' user='geog5871student' password='Geibeu9b'";
 		$dbconn = pg_connect($pgsqlOptions) or die ('connection failure');
 		
 		$dbconn = pg_connect($pgsqlOptions);
