@@ -1,17 +1,19 @@
 /* Elements included at top of page */
 header {
 	margin: 20px;
+	padding-bottom: 45px;
 }
 
-header-left {
+.header-left{
+	padding-top: 10px;
 	float: left;
 }
 
-header-right {
+.header-right {
 	float: right;
 }
 
-header:after {
+.header:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -41,8 +43,8 @@ header:after {
 
 }
 
-/* Add an active class to highlight the current page */
-.active {
+/* Active id to highlight the current page */
+#active {
 	color: rgb(34, 139, 34);
 	border-bottom: 2px solid rgb(34, 139, 34);
 }
@@ -86,7 +88,6 @@ hero:after {
 	display: table;
 	clear: both;
 }
-
 
 .logo {
 	margin: 20px;
@@ -158,12 +159,13 @@ hero:after {
 	background-size: cover;
 }
 
-hero1 {
+#hero1 {
 	font-family: 'Open Sans', sans-serif;  
 	font-size: 45px;
+	padding-bottom: 10px;
 }
 
-main {
+.main {
 	font-family: 'Open Sans', sans-serif;  
 	font-size: 14px;
 	margin: 40px;

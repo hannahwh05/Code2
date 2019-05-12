@@ -40,28 +40,27 @@
 <!--Call the function to load initialise the map object -->
 <body onload = "fetchData()";>
 	<header>
-		<header-left>
+		<div class= "header-left">
 			<!-- Navigation pane -->
-			<div class="topnav" id="myTopnav">
-				<a href="home.html" >HOME</a>
-				<a class="active" href="discover.html">DISCOVER</a>
+			<div class="topnav">
+			  <a  href="home.html" >HOME</a>
+				<a id="active" href="discover.html">DISCOVER</a>
 				<a href="contribute.html">CONTRIBUTE</a>
 				<a href="about.html">ABOUT</a>
 			</div>
-		</header-left>
-		<header-right>
+		</div>
+		<div class="header-right">
 			<div>
 				<!-- Social media links -->
 				<a href="https://www.facebook.com/WalksOWS/" target="_blank" class="fa fa-facebook"> </a>
 				<a href="https://twitter.com/walksows" target="_blank" class="fa fa-twitter"></a>
 				<a href="https://www.instagram.com/walksows/" target="_blank" class="fa fa-instagram"></a>
 			</div>
-		</header-right>
+		</div>
 	</header>
-	<main>
+	
 		<!--The map will appear in this div-->
 		<div id="map" class="gmap"</div>
 		
-	</main>
 </body>
 </html>
