@@ -19,7 +19,7 @@
 	while ($row = pg_fetch_array($result, null, PGSQL_ASSOC))	{
 	
 		//Populate walkData array 
-		$walkData[] = array("id" => $row["id"], "lat" => $row["lat"], "lon" => $row["long"]);
+		$walkData[] = array("id" => $row["id"], "lat" => $row["lat"], "lon" => $row["long"], "parking" => $row["parking"], "dogs" => $row["dogs"], "play_area" => $row["play_area"], "disabled" => $row["disabled"], "toilets" => $row["toilets"], "designation" => $row["designation"], "owner" => $row["owner"], "website" => $row["website"], "cafe" => $row["cafe"], "visitor_centre" => $row["visitor_centre"], "water" => $row["water"], "woodland" => $row["woodland"]);
 	}
 	
 	//Encode walkData array in JSON

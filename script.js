@@ -29,7 +29,19 @@ var map;
 				walkData.push ({
 					id: results[i].id, 
 					lat: results[i].lat, 
-					lon: results[i].lon
+					lon: results[i].lon,
+					parking: results[i].parking,
+					dogs: results[i].dogs,
+					play_area: results[i].play_area,
+					disabled: results[i].disabled,
+					toilets: results[i].toilets,
+					designation: results[i].designation,
+					owner: results[i].owner,
+					website: results[i].website,
+					cafe: results[i].cafe,
+					visitor_centre: results[i].visitor_centre,
+					water: results[i].water,
+					woodland: results[i].woodland
 				}); 
 			}
 			
@@ -45,16 +57,14 @@ var map;
 		});
 			
 		function plotWalks()	{
-			 //Loop through walk data to create marker at each location 
-			 for (var i = 0; i < walkData.length; i++)	{ 
+			//Loop through walk data to create marker at each location 
+			for (var i = 0; i < walkData.length; i++)	{ 
 				var markerLocation = 
-				 new L.LatLng(walkData[i].lat, walkData[i].lon);
+				new L.LatLng(walkData[i].lat, walkData[i].lon);
 
 				var marker = new L.Marker(markerLocation, {icon: myIcon}).addTo(map);
 
-				marker.bindPopup(walkData[i].id);
-				
-				
+				marker.bindPopup("Site name: " + walkData[i].id + "<br> Parking?: " + walkData[i].parking + "<br> Dogs permitted?: " + walkData[i].dogs + "<br> Play area?: " + walkData[i].play_area + "<br> Disabled access?: " + walkData[i].disabled + "<br> Toilets?: " + walkData[i].toilets + "<br> Designation: " + walkData[i].designation + "<br> Owner: " + walkData[i].owner + "<br> Website: " + walkData[i].website + "<br> Cafe?: " + walkData[i].cafe + "<br> Visitor centre?: " + walkData[i].visitor_centre + "<br> Rivers, ponds or lakes?: " + walkData[i].water + "<br> Woodland?: " + walkData[i].woodland);
 			 }
 		}
 		
