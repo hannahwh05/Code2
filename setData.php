@@ -38,11 +38,21 @@
 		$insertQuery = pg_prepare(
 			$dbconn, "my_query", "INSERT INTO gy18hoae_walks_contribute(id, lat, long, parking, dogs, play_area, disabled, toilets, designation, owner, website, cafe, visitor_centre, water, woodland, comments) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)"
 		);
+<<<<<<< HEAD
+		//Some sort of error here? This comes up when click submit: 'Insert Query failed: ERROR: invalid input syntax for type numeric: "" '
+		$result = pg_execute(
+			$dbconn, "my_query", 
+			//array_to_string(
+			array($id, $lat, $long, $parking, $dogs, $play_area, $disabled, $toilets, $designation, $owner, $website, $cafe, $visitor_centre, $water, $woodland, $comments))  or die ('Insert Query failed: '.pg_last_error()
+			// ' ', '')
+		); 
+=======
 		$result = pg_execute(
 			$dbconn, "my_query", 
 			array($id, $lat, $long, $parking, $dogs, $play_area, $disabled, $toilets, $designation, $owner, $website, $cafe, $visitor_centre, $water, $woodland, $comments))  or die ('Insert Query failed: '.pg_last_error()
 		); 
 
+>>>>>>> 8d86b53dc88595607f0497597edf0edb95463d4f
 		
 		if (is_null($result)) {
 			echo 'Ooops! Something went wrong there... Try again please!';
@@ -69,6 +79,7 @@
 		   return $sanStr;
 		} 
 	?>
-
+	
+	
 </body>
 </html> 

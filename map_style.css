@@ -5,6 +5,12 @@
 	border-bottom: 3px solid rgb(34, 139, 34); 
 }
 
+.gmap:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* Elements included at top of page */
 header {
 	margin: 20px;
@@ -59,7 +65,10 @@ header {
 .main {
 	font-family: 'Open Sans', sans-serif;  
 	font-size: 14px;
-	margin: 40px;
+	color: rgb(34, 139, 34);
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 /* Social media buttons */
@@ -92,6 +101,8 @@ header {
 	color: white;
 }
 
+<<<<<<< HEAD
+=======
 h2 {
 	font-family: 'Open Sans', sans-serif;  
 	font-size: 16px;
@@ -106,6 +117,7 @@ p {
 	color: rgb(34, 139, 34);
 }
 
+>>>>>>> 8d86b53dc88595607f0497597edf0edb95463d4f
 /* Add styles to the form container */
 .container {
 	position: absolute;
@@ -121,4 +133,13 @@ p {
 	text-align: center;
 }
 
+<<<<<<< HEAD
+.infoWindow {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: rgb(34, 139, 34);
+}
+=======
 
+>>>>>>> 8d86b53dc88595607f0497597edf0edb95463d4f

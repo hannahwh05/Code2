@@ -128,8 +128,14 @@ input[type=submit] {
 	margin-top: 100px;
 	margin-bottom: 100px;
 	padding: 12px 20px;
+<<<<<<< HEAD
+	border: 2px solid rgb(34, 139, 34);
+	border-radius: 4px;
+	width: 600px;
+=======
 	border: none;
 	border-radius: 4px;
+>>>>>>> 8d86b53dc88595607f0497597edf0edb95463d4f
 	cursor: pointer;
 }
 

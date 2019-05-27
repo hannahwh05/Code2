@@ -13,6 +13,14 @@ var map;
 
 			}).addTo(map);
 		
+			//Add wms layer to map
+			/*L.tileLayer.wms('https://environment.data.gov.uk/spatialdata/local-nature-reserves-england/wms', {
+				layers: 'Local_Nature_Reserves_England',
+				transparent: true,
+				attribution: '["Open Government Licence"]'
+			}).addTo(map); */
+
+	
 			//Add scale bar to map
 			L.control.scale().addTo(map);
 			
@@ -55,7 +63,8 @@ var map;
 			iconUrl: 'images/marker.png',
 			iconSize: [35, 59]
 		});
-			
+		
+	
 		function plotWalks()	{
 			//Loop through walk data to create marker at each location 
 			for (var i = 0; i < walkData.length; i++)	{ 
@@ -64,7 +73,11 @@ var map;
 
 				var marker = new L.Marker(markerLocation, {icon: myIcon}).addTo(map);
 
+<<<<<<< HEAD
+				marker.bindPopup("<h2>" + walkData[i].id + "</h3> <hr> <div class='infoWindow'> Parking? : " + walkData[i].parking + "<br> Dogs permitted? : " + walkData[i].dogs + "<br> Play area? : " + walkData[i].play_area + "<br> Disabled access? : " + walkData[i].disabled + "<br> Toilets? : " + walkData[i].toilets + "<br> Designation : " + walkData[i].designation + "<br> Owner : " + walkData[i].owner + "<br> Website : " + "<a target='_blank' href= >" + walkData[i].website + "</a>" + "<br> Cafe? : " + walkData[i].cafe + "<br> Visitor centre? : " + walkData[i].visitor_centre + "<br> Rivers, ponds or lakes? : " + walkData[i].water + "<br> Woodland? : " + walkData[i].woodland + "</div>");
+=======
 				marker.bindPopup("Site name: " + walkData[i].id + "<br> Parking?: " + walkData[i].parking + "<br> Dogs permitted?: " + walkData[i].dogs + "<br> Play area?: " + walkData[i].play_area + "<br> Disabled access?: " + walkData[i].disabled + "<br> Toilets?: " + walkData[i].toilets + "<br> Designation: " + walkData[i].designation + "<br> Owner: " + walkData[i].owner + "<br> Website: " + walkData[i].website + "<br> Cafe?: " + walkData[i].cafe + "<br> Visitor centre?: " + walkData[i].visitor_centre + "<br> Rivers, ponds or lakes?: " + walkData[i].water + "<br> Woodland?: " + walkData[i].woodland);
+>>>>>>> 8d86b53dc88595607f0497597edf0edb95463d4f
 			 }
 		}
 		
