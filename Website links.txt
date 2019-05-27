@@ -1,0 +1,4 @@
+Homepage: http://dialogplus.leeds.ac.uk/geog5870/web39/Assignment2/home.html
+Discover (map page): http://dialogplus.leeds.ac.uk/geog5870/web39/Assignment2/discover.html
+Contribute (form): http://dialogplus.leeds.ac.uk/geog5870/web39/Assignment2/contribute.html
+About: http://dialogplus.leeds.ac.uk/geog5870/web39/Assignment2/about.html
